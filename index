@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spacenix — Eletrônicos Originais</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="mascot-icon">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="30" fill="url(#logoGrad)"/>
+          <text x="30" y="38" text-anchor="middle" font-size="28" fill="white">🦌</text>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="60" y2="60">
+              <stop offset="0%" stop-color="#00c8ff"/>
+              <stop offset="100%" stop-color="#0055ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <span class="nav-brand">SPACENIX</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#iphones-novos">iPhones Novos</a>
+      <a href="#spacenix-phones">Spacenix Phones</a>
+      <a href="#xiaomi">Xiaomi</a>
+      <a href="#tablets">Tablets</a>
+      <a href="#watches">Watches</a>
+      <a href="#acessorios">Acessórios</a>
+    </div>
+    <button class="btn-entrar">Entrar</button>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-tag">✦ Eletrônicos com procedência garantida</p>
+    <h1 class="hero-title">Eletrônicos originais<br/><span>com garantia.</span></h1>
+    <p class="hero-sub">Produtos lacrados, revisados e com garantia real. Aqui você encontra iPhones novos, Spacenix Phones certificados, Xiaomi, tablets, watches e acessórios — tudo com suporte especializado.</p>
+    <div class="hero-btns">
+      <a href="#iphones-novos" class="btn-primary scroll-link">Ver iPhones</a>
+      <a href="#spacenix-phones" class="btn-secondary scroll-link">Spacenix Phones</a>
+    </div>
+    <div class="hero-badges">
+      <span>📦 Produtos Lacrados</span>
+      <span>🍎 Garantia Apple</span>
+      <span>🔒 Compra Segura</span>
+      <span>💬 Atend. Especializado</span>
+    </div>
+  </div>
+  <div class="hero-orb hero-orb1"></div>
+  <div class="hero-orb hero-orb2"></div>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>📍 São Paulo, SP</span>
+    <span>📦 Produtos Lacrados & Originais</span>
+    <span>🍎 Garantia Apple Válida</span>
+    <span>💬 Atendimento via WhatsApp</span>
+    <span>🔒 Compra 100% Segura</span>
+    <span>🚀 Spacenix — Sua loja de confiança</span>
+    <span>⭐ Spacenix Phones com até 1 ano de garantia</span>
+    <span>📱 Parcele em até 12x</span>
+    <span>📍 São Paulo, SP</span>
+    <span>📦 Produtos Lacrados & Originais</span>
+    <span>🍎 Garantia Apple Válida</span>
+    <span>💬 Atendimento via WhatsApp</span>
+    <span>🔒 Compra 100% Segura</span>
+    <span>🚀 Spacenix — Sua loja de confiança</span>
+    <span>⭐ Spacenix Phones com até 1 ano de garantia</span>
+    <span>📱 Parcele em até 12x</span>
+  </div>
+</div>
+
+<!-- ===================== TABS ===================== -->
+<div class="tabs-wrap" id="tabsWrap">
+  <div class="tabs">
+    <button class="tab-btn active" data-target="iphones-novos">iPhones Novos</button>
+    <button class="tab-btn" data-target="spacenix-phones">Spacenix Phones</button>
+    <button class="tab-btn" data-target="xiaomi">Xiaomi</button>
+    <button class="tab-btn" data-target="tablets">Tablets</button>
+    <button class="tab-btn" data-target="watches">Watches</button>
+    <button class="tab-btn" data-target="acessorios">Acessórios</button>
+  </div>
+</div>
+
+<!-- ===================== SEÇÕES ===================== -->
+<main class="main-content">
+
+  <!-- iPhones Novos -->
+  <section class="section" id="iphones-novos">
+    <div class="section-header">
+      <h2>iPhones Novos <span>Lacrados</span></h2>
+      <p>100% originais, lacrados de fábrica, com garantia Apple válida</p>
+    </div>
+    <div class="cards-grid" id="grid-iphones-novos"></div>
+  </section>
+
+  <!-- Spacenix Phones -->
+  <section class="section" id="spacenix-phones">
+    <div class="section-header">
+      <h2>Spacenix Phones <span>Usados</span></h2>
+      <p>Revisados e com garantia Spacenix — 6 meses a 1 ano conforme o modelo</p>
+    </div>
+    <div class="cards-grid" id="grid-spacenix-phones"></div>
+  </section>
+
+  <!-- Xiaomi -->
+  <section class="section" id="xiaomi">
+    <div class="section-header">
+      <h2>Xiaomi / Redmi / Poco</h2>
+      <p>Versões globais lacradas. <strong>Sem garantia de fábrica no Brasil</strong> — suporte via Spacenix.</p>
+    </div>
+    <div class="notice-box">⚠️ Estes aparelhos são versões globais importadas. Não possuem garantia de fábrica no Brasil. O suporte é prestado diretamente pela Spacenix.</div>
+    <div class="cards-grid" id="grid-xiaomi"></div>
+  </section>
+
+  <!-- Tablets -->
+  <section class="section" id="tablets">
+    <div class="section-header">
+      <h2>Tablets</h2>
+      <p>iPads originais e Xiaomi Pad — novos e lacrados</p>
+    </div>
+    <div class="cards-grid" id="grid-tablets"></div>
+  </section>
+
+  <!-- Watches -->
+  <section class="section" id="watches">
+    <div class="section-header">
+      <h2>Apple Watch</h2>
+      <p>Originais, lacrados, com garantia Apple</p>
+    </div>
+    <div class="cards-grid" id="grid-watches"></div>
+  </section>
+
+  <!-- Acessórios -->
+  <section class="section" id="acessorios">
+    <div class="section-header">
+      <h2>Acessórios Apple</h2>
+      <p>AirTags, AirPods, Apple Pencil, Magic Mouse e mais</p>
+    </div>
+    <div class="cards-grid" id="grid-acessorios"></div>
+  </section>
+
+</main>
+
+<!-- ===================== MARCAS ===================== -->
+<section class="brands-section">
+  <div class="brands-inner">
+    <span class="brand-tag">🍎 Apple</span>
+    <span class="brand-tag">Xiaomi</span>
+    <span class="brand-tag">Redmi</span>
+    <span class="brand-tag">Poco</span>
+    <span class="brand-tag">Realme</span>
+    <span class="brand-tag">Infinix</span>
+  </div>
+</section>
+
+<!-- ===================== DIFERENCIAIS ===================== -->
+<section class="features-section">
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feat-icon">📦</div>
+      <h3>Produtos Lacrados</h3>
+      <p>Direto da fábrica, sem violação de qualquer tipo</p>
+    </div>
+    <div class="feature-card">
+      <div class="feat-icon">🍎</div>
+      <h3>Garantia Apple</h3>
+      <p>iPhones novos com garantia oficial da Apple ativa</p>
+    </div>
+    <div class="feature-card">
+      <div class="feat-icon">⭐</div>
+      <h3>Spacenix Phones</h3>
+      <p>Usados revisados com até 1 ano de garantia da loja</p>
+    </div>
+    <div class="feature-card">
+      <div class="feat-icon">💳</div>
+      <h3>Parcele em 12x</h3>
+      <p>Condições especiais de parcelamento para você</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEWSLETTER ===================== -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <h2>Fique por dentro das novidades</h2>
+    <p>Receba ofertas exclusivas e lançamentos em primeira mão</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Seu melhor e-mail..."/>
+      <button class="btn-primary">Inscrever</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="mascot-icon small">
+        <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="30" fill="url(#fg2)"/><text x="30" y="38" text-anchor="middle" font-size="28" fill="white">🦌</text><defs><linearGradient id="fg2" x1="0" y1="0" x2="60" y2="60"><stop offset="0%" stop-color="#00c8ff"/><stop offset="100%" stop-color="#0055ff"/></linearGradient></defs></svg>
+      </div>
+      <span class="nav-brand">SPACENIX</span>
+      <p>Eletrônicos originais com garantia real.</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Produtos</h4>
+        <a href="#iphones-novos">iPhones Novos</a>
+        <a href="#spacenix-phones">Spacenix Phones</a>
+        <a href="#xiaomi">Xiaomi</a>
+        <a href="#tablets">Tablets</a>
+        <a href="#watches">Watches</a>
+        <a href="#acessorios">Acessórios</a>
+      </div>
+      <div>
+        <h4>Marcas</h4>
+        <a href="#">Apple</a>
+        <a href="#">Xiaomi</a>
+        <a href="#">Redmi</a>
+        <a href="#">Poco</a>
+        <a href="#">Realme</a>
+        <a href="#">Infinix</a>
+      </div>
+      <div>
+        <h4>Suporte</h4>
+        <a href="#">Fale via WhatsApp</a>
+        <a href="#">Política de Garantia</a>
+        <a href="#">Formas de Pagamento</a>
+        <a href="#">Sobre a Spacenix</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Spacenix. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <div class="lightbox-box" id="lightboxBox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <div class="lightbox-img-placeholder" id="lightboxImg">📱</div>
+    <div class="lightbox-info">
+      <span class="lb-badge" id="lbBadge">Novo</span>
+      <h3 id="lbName">Produto</h3>
+      <p id="lbCat">Categoria · Armazenamento</p>
+      <p class="lb-price" id="lbPrice">R$ 0,00</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
