@@ -61,3 +61,21 @@ function closeLightbox(e) {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow=''; }
 });
+
+function trocarFoto(cardId, src, temFoto) {
+  const img = document.getElementById('img-' + cardId);
+  const ico = document.getElementById('ico-' + cardId);
+  if (!img) return;
+  if (temFoto) {
+    img.src = src;
+    img.style.display = 'block';
+    if (ico) ico.style.display = 'none';
+    const lbl = img.closest('.product-img').querySelector('.product-img-label');
+    if (lbl) lbl.style.display = 'none';
+  } else {
+    img.style.display = 'none';
+    if (ico) ico.style.display = 'block';
+    const lbl = img.closest('.product-img').querySelector('.product-img-label');
+    if (lbl) lbl.style.display = 'block';
+  }
+}
