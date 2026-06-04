@@ -22,9 +22,7 @@
     <li><a href="#watches">Watches</a></li>
     <li><a href="#acessorios">Acessórios</a></li>
   </ul>
-  <div>
-    <button class="nav-btn">Entrar</button>
-  </div>
+  <div><button class="nav-btn">Entrar</button></div>
 </nav>
 
 <section class="hero">
@@ -46,7 +44,7 @@
   </div>
 </section>
 
-<div class="marquee-wrap"><div class="marquee-track"><span class="marquee-item">Produtos Lacrados</span><span class="marquee-item">Garantia 1 Ano Apple</span><span class="marquee-item">iPhone 17 Pro Max a partir de R$ 8.700</span><span class="marquee-item">Compra Segura · Parcele 12x</span><span class="marquee-item">Spacenix Phones — Usados Selecionados</span><span class="marquee-item">Apple Watch Ultra 2 · R$ 4.700</span><span class="marquee-item">iPad Air M4 · 11&quot; e 13&quot;</span><span class="marquee-item">Xiaomi Poco X8 Pro Max · R$ 3.650</span><span class="marquee-item">Produtos Lacrados</span><span class="marquee-item">Garantia 1 Ano Apple</span><span class="marquee-item">iPhone 17 Pro Max a partir de R$ 8.700</span><span class="marquee-item">Compra Segura · Parcele 12x</span><span class="marquee-item">Spacenix Phones — Usados Selecionados</span><span class="marquee-item">Apple Watch Ultra 2 · R$ 4.700</span><span class="marquee-item">iPad Air M4 · 11&quot; e 13&quot;</span><span class="marquee-item">Xiaomi Poco X8 Pro Max · R$ 3.650</span></div></div>
+<div class="marquee-wrap"><div class="marquee-track"><span class="marquee-item">Produtos Lacrados</span><span class="marquee-item">Garantia 1 Ano Apple</span><span class="marquee-item">iPhone 17 Pro Max a partir de R$ 8.700</span><span class="marquee-item">Compra Segura · Parcele 12x</span><span class="marquee-item">Spacenix Phones — Usados Selecionados</span><span class="marquee-item">Apple Watch Ultra 2 · R$ 4.700</span><span class="marquee-item">iPad Air M4</span><span class="marquee-item">Xiaomi Poco X8 Pro Max · R$ 3.650</span><span class="marquee-item">Produtos Lacrados</span><span class="marquee-item">Garantia 1 Ano Apple</span><span class="marquee-item">iPhone 17 Pro Max a partir de R$ 8.700</span><span class="marquee-item">Compra Segura · Parcele 12x</span><span class="marquee-item">Spacenix Phones — Usados Selecionados</span><span class="marquee-item">Apple Watch Ultra 2 · R$ 4.700</span><span class="marquee-item">iPad Air M4</span><span class="marquee-item">Xiaomi Poco X8 Pro Max · R$ 3.650</span></div></div>
 
 <div class="section-tabs">
   <button class="tab-btn active" onclick="document.getElementById('iphones-novos').scrollIntoView({behavior:'smooth'})">📱 iPhones Novos</button>
@@ -64,16 +62,19 @@
   <div class="products-grid"><div class="product-card">
       <span class="product-badge badge-new">Novo</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/iphone17e-rosa.jpeg" id="img-17e-256" alt="iPhone 17E" style="width:100%;height:100%;object-fit:contain;">
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 256GB</p>
         <h3 class="product-name">iPhone 17E</h3>
         <p class="product-storage">Lacrado · Indiano/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Rosa R$4.150"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rosa R$4.150</button><button class="chip" onclick="selectChip(this)" data-label="Preto R$4.150"><span class="c-dot" style="background:#111111;"></span>Preto R$4.150</button><button class="chip" onclick="selectChip(this)" data-label="Branco R$4.150"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$4.150</button></div>
+        <div class="color-chips">
+          <button class="chip selected" onclick="selectChip(this);document.getElementById('img-17e-256').src='img/iphone17e-rosa.jpeg'" data-label="Rosa R$4.150"><span class="c-dot" style="background:#f4a0b4;border:1px solid #555;"></span>Rosa R$4.150</button>
+          <button class="chip" onclick="selectChip(this);document.getElementById('img-17e-256').src='img/iphone17e-preto.jpeg'" data-label="Preto R$4.150"><span class="c-dot" style="background:#111111;"></span>Preto R$4.150</button>
+          <button class="chip" onclick="selectChip(this);document.getElementById('img-17e-256').src='img/iphone17e-branco.jpeg'" data-label="Branco R$4.150"><span class="c-dot" style="background:#f5f5f5;border:1px solid #555;"></span>Branco R$4.150</button>
+        </div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Rosa R$4.150</div>
         <div class="product-footer">
           <span class="product-price">R$ 4.150</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -85,16 +86,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">Novo</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17e-512" alt="iPhone 17E" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17e-512">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 512GB</p>
         <h3 class="product-name">iPhone 17E</h3>
         <p class="product-storage">Lacrado · Americano/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17e-512","img/placeholder.jpg",false)" data-label="Branco R$5.200"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$5.200</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco R$5.200</div>
         <div class="product-footer">
           <span class="product-price">R$ 5.200</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -106,16 +106,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇯🇵 Japonês</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17-256-jp" alt="iPhone 17" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17-256-jp">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 256GB</p>
         <h3 class="product-name">iPhone 17</h3>
         <p class="product-storage">Lacrado · Japonês/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Verde"><span class="c-dot" style="background:#4a7c4e;"></span>Verde</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17-256-jp","img/placeholder.jpg",false)" data-label="Verde R$5.400"><span class="c-dot" style="background:#4a7c4e;"></span>Verde R$5.400</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Verde R$5.400</div>
         <div class="product-footer">
           <span class="product-price">R$ 5.400</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -127,16 +126,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇺🇸 Americano</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17-256-us" alt="iPhone 17" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17-256-us">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 256GB</p>
         <h3 class="product-name">iPhone 17</h3>
         <p class="product-storage">Lacrado · Americano/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Verde R$5.450"><span class="c-dot" style="background:#4a7c4e;"></span>Verde R$5.450</button><button class="chip" onclick="selectChip(this)" data-label="Azul R$5.400"><span class="c-dot" style="background:#2255cc;"></span>Azul R$5.400</button><button class="chip" onclick="selectChip(this)" data-label="Roxo R$5.500"><span class="c-dot" style="background:#9b59b6;"></span>Roxo R$5.500</button><button class="chip" onclick="selectChip(this)" data-label="Branco R$5.500"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$5.500</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17-256-us","img/placeholder.jpg",false)" data-label="Verde R$5.450"><span class="c-dot" style="background:#4a7c4e;"></span>Verde R$5.450</button><button class="chip" onclick="selectChip(this);trocarFoto("17-256-us","img/placeholder.jpg",false)" data-label="Azul R$5.400"><span class="c-dot" style="background:#2255cc;"></span>Azul R$5.400</button><button class="chip" onclick="selectChip(this);trocarFoto("17-256-us","img/placeholder.jpg",false)" data-label="Roxo R$5.500"><span class="c-dot" style="background:#9b59b6;"></span>Roxo R$5.500</button><button class="chip" onclick="selectChip(this);trocarFoto("17-256-us","img/placeholder.jpg",false)" data-label="Branco R$5.500"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$5.500</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Verde R$5.450</div>
         <div class="product-footer">
           <span class="product-price">R$ 5.400</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -148,16 +146,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇧🇷 Anatel</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17-256-an" alt="iPhone 17" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17-256-an">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 256GB</p>
         <h3 class="product-name">iPhone 17</h3>
         <p class="product-storage">Lacrado · Anatel</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17-256-an","img/placeholder.jpg",false)" data-label="Preto R$5.550"><span class="c-dot" style="background:#111111;"></span>Preto R$5.550</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto R$5.550</div>
         <div class="product-footer">
           <span class="product-price">R$ 5.550</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -169,16 +166,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇺🇸 Americano</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17pro-256-us" alt="iPhone 17 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17pro-256-us">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro · 256GB</p>
         <h3 class="product-name">iPhone 17 Pro</h3>
         <p class="product-storage">Lacrado · Americano/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco R$8.100"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$8.100</button><button class="chip" onclick="selectChip(this)" data-label="Laranja R$8.050"><span class="c-dot" style="background:#e07820;"></span>Laranja R$8.050</button><button class="chip" onclick="selectChip(this)" data-label="Azul R$8.100"><span class="c-dot" style="background:#2255cc;"></span>Azul R$8.100</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17pro-256-us","img/placeholder.jpg",false)" data-label="Branco R$8.100"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$8.100</button><button class="chip" onclick="selectChip(this);trocarFoto("17pro-256-us","img/placeholder.jpg",false)" data-label="Laranja R$8.050"><span class="c-dot" style="background:#e07820;"></span>Laranja R$8.050</button><button class="chip" onclick="selectChip(this);trocarFoto("17pro-256-us","img/placeholder.jpg",false)" data-label="Azul R$8.100"><span class="c-dot" style="background:#2255cc;"></span>Azul R$8.100</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco R$8.100</div>
         <div class="product-footer">
           <span class="product-price">R$ 8.050</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -190,16 +186,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇺🇸 Americano</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17pro-512-us" alt="iPhone 17 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17pro-512-us">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro · 512GB</p>
         <h3 class="product-name">iPhone 17 Pro</h3>
         <p class="product-storage">Lacrado · Americano/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17pro-512-us","img/placeholder.jpg",false)" data-label="Branco R$9.300"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$9.300</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco R$9.300</div>
         <div class="product-footer">
           <span class="product-price">R$ 9.300</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -211,16 +206,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇯🇵 Japonês</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17pm-256-jp" alt="iPhone 17 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17pm-256-jp">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 256GB</p>
         <h3 class="product-name">iPhone 17 Pro Max</h3>
         <p class="product-storage">Lacrado · Japonês/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul R$8.700"><span class="c-dot" style="background:#2255cc;"></span>Azul R$8.700</button><button class="chip" onclick="selectChip(this)" data-label="Branco R$8.900"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$8.900</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17pm-256-jp","img/placeholder.jpg",false)" data-label="Azul R$8.700"><span class="c-dot" style="background:#2255cc;"></span>Azul R$8.700</button><button class="chip" onclick="selectChip(this);trocarFoto("17pm-256-jp","img/placeholder.jpg",false)" data-label="Branco R$8.900"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$8.900</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul R$8.700</div>
         <div class="product-footer">
           <span class="product-price">R$ 8.700</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -232,16 +226,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇺🇸 Americano</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17pm-256-us" alt="iPhone 17 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17pm-256-us">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 256GB</p>
         <h3 class="product-name">iPhone 17 Pro Max</h3>
         <p class="product-storage">Lacrado · Americano/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco R$8.950"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$8.950</button><button class="chip" onclick="selectChip(this)" data-label="Azul R$8.700"><span class="c-dot" style="background:#2255cc;"></span>Azul R$8.700</button><button class="chip" onclick="selectChip(this)" data-label="Laranja R$8.750"><span class="c-dot" style="background:#e07820;"></span>Laranja R$8.750</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17pm-256-us","img/placeholder.jpg",false)" data-label="Branco R$8.950"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$8.950</button><button class="chip" onclick="selectChip(this);trocarFoto("17pm-256-us","img/placeholder.jpg",false)" data-label="Azul R$8.700"><span class="c-dot" style="background:#2255cc;"></span>Azul R$8.700</button><button class="chip" onclick="selectChip(this);trocarFoto("17pm-256-us","img/placeholder.jpg",false)" data-label="Laranja R$8.750"><span class="c-dot" style="background:#e07820;"></span>Laranja R$8.750</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco R$8.950</div>
         <div class="product-footer">
           <span class="product-price">R$ 8.700</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -253,16 +246,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇧🇷 Anatel</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17pm-256-an" alt="iPhone 17 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17pm-256-an">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 256GB</p>
         <h3 class="product-name">iPhone 17 Pro Max</h3>
         <p class="product-storage">Lacrado · Anatel/chip físico</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17pm-256-an","img/placeholder.jpg",false)" data-label="Azul R$8.850"><span class="c-dot" style="background:#2255cc;"></span>Azul R$8.850</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul R$8.850</div>
         <div class="product-footer">
           <span class="product-price">R$ 8.850</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -274,16 +266,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇯🇵 Japonês</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17pm-512-jp" alt="iPhone 17 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17pm-512-jp">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 512GB</p>
         <h3 class="product-name">iPhone 17 Pro Max</h3>
         <p class="product-storage">Lacrado · Japonês/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Laranja"><span class="c-dot" style="background:#e07820;"></span>Laranja</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17pm-512-jp","img/placeholder.jpg",false)" data-label="Laranja R$9.200"><span class="c-dot" style="background:#e07820;"></span>Laranja R$9.200</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Laranja R$9.200</div>
         <div class="product-footer">
           <span class="product-price">R$ 9.200</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -295,16 +286,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇺🇸 Americano</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17pm-512-us" alt="iPhone 17 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17pm-512-us">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 512GB</p>
         <h3 class="product-name">iPhone 17 Pro Max</h3>
         <p class="product-storage">Lacrado · Americano/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Laranja R$9.300"><span class="c-dot" style="background:#e07820;"></span>Laranja R$9.300</button><button class="chip" onclick="selectChip(this)" data-label="Branco R$9.750"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$9.750</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17pm-512-us","img/placeholder.jpg",false)" data-label="Laranja R$9.300"><span class="c-dot" style="background:#e07820;"></span>Laranja R$9.300</button><button class="chip" onclick="selectChip(this);trocarFoto("17pm-512-us","img/placeholder.jpg",false)" data-label="Branco R$9.750"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$9.750</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Laranja R$9.300</div>
         <div class="product-footer">
           <span class="product-price">R$ 9.300</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -316,16 +306,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">🇺🇸 Americano</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-17pm-1tb-us" alt="iPhone 17 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-17pm-1tb-us">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 1TB</p>
         <h3 class="product-name">iPhone 17 Pro Max</h3>
         <p class="product-storage">Lacrado · Americano/e-sim</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul R$10.550"><span class="c-dot" style="background:#2255cc;"></span>Azul R$10.550</button><button class="chip" onclick="selectChip(this)" data-label="Branco R$10.650"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$10.650</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("17pm-1tb-us","img/placeholder.jpg",false)" data-label="Azul R$10.550"><span class="c-dot" style="background:#2255cc;"></span>Azul R$10.550</button><button class="chip" onclick="selectChip(this);trocarFoto("17pm-1tb-us","img/placeholder.jpg",false)" data-label="Branco R$10.650"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$10.650</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul R$10.550</div>
         <div class="product-footer">
           <span class="product-price">R$ 10.550</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -339,16 +328,15 @@
   <div class="products-grid"><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-16-128-in" alt="iPhone 16" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-16-128-in">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 16</h3>
         <p class="product-storage">Lacrado · Indiano/chip físico</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul R$4.800"><span class="c-dot" style="background:#2255cc;"></span>Azul R$4.800</button><button class="chip" onclick="selectChip(this)" data-label="Verde R$4.750"><span class="c-dot" style="background:#4a7c4e;"></span>Verde R$4.750</button><button class="chip" onclick="selectChip(this)" data-label="Preto R$4.850"><span class="c-dot" style="background:#111111;"></span>Preto R$4.850</button><button class="chip" onclick="selectChip(this)" data-label="Branco R$4.950"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$4.950</button><button class="chip" onclick="selectChip(this)" data-label="Rose R$4.950"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rose R$4.950</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("16-128-in","img/placeholder.jpg",false)" data-label="Azul R$4.800"><span class="c-dot" style="background:#2255cc;"></span>Azul R$4.800</button><button class="chip" onclick="selectChip(this);trocarFoto("16-128-in","img/placeholder.jpg",false)" data-label="Verde R$4.750"><span class="c-dot" style="background:#4a7c4e;"></span>Verde R$4.750</button><button class="chip" onclick="selectChip(this);trocarFoto("16-128-in","img/placeholder.jpg",false)" data-label="Preto R$4.850"><span class="c-dot" style="background:#111111;"></span>Preto R$4.850</button><button class="chip" onclick="selectChip(this);trocarFoto("16-128-in","img/placeholder.jpg",false)" data-label="Branco R$4.950"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$4.950</button><button class="chip" onclick="selectChip(this);trocarFoto("16-128-in","img/placeholder.jpg",false)" data-label="Rose R$4.950"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rose R$4.950</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul R$4.800</div>
         <div class="product-footer">
           <span class="product-price">R$ 4.750</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -360,16 +348,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-16pro-128-an" alt="iPhone 16 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-16pro-128-an">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro · 128GB</p>
         <h3 class="product-name">iPhone 16 Pro</h3>
         <p class="product-storage">Lacrado · Anatel/chip físico</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("16pro-128-an","img/placeholder.jpg",false)" data-label="Branco R$5.950"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$5.950</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco R$5.950</div>
         <div class="product-footer">
           <span class="product-price">R$ 5.950</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -381,16 +368,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-16pm-512-an" alt="iPhone 16 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-16pm-512-an">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 512GB</p>
         <h3 class="product-name">iPhone 16 Pro Max</h3>
         <p class="product-storage">Lacrado · Anatel/chip físico</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Natural R$8.150"><span class="c-dot" style="background:#c9a96e;"></span>Natural R$8.150</button><button class="chip" onclick="selectChip(this)" data-label="Desert R$8.150"><span class="c-dot" style="background:#d4a26a;"></span>Desert R$8.150</button><button class="chip" onclick="selectChip(this)" data-label="Preto R$8.150"><span class="c-dot" style="background:#111111;"></span>Preto R$8.150</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("16pm-512-an","img/placeholder.jpg",false)" data-label="Natural R$8.150"><span class="c-dot" style="background:#c9a96e;"></span>Natural R$8.150</button><button class="chip" onclick="selectChip(this);trocarFoto("16pm-512-an","img/placeholder.jpg",false)" data-label="Desert R$8.150"><span class="c-dot" style="background:#d4a26a;"></span>Desert R$8.150</button><button class="chip" onclick="selectChip(this);trocarFoto("16pm-512-an","img/placeholder.jpg",false)" data-label="Preto R$8.150"><span class="c-dot" style="background:#111111;"></span>Preto R$8.150</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Natural R$8.150</div>
         <div class="product-footer">
           <span class="product-price">R$ 8.150</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -402,16 +388,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-16e-128-in" alt="iPhone 16E" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-16e-128-in">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 16E</h3>
         <p class="product-storage">Lacrado · Indiano/chip físico</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("16e-128-in","img/placeholder.jpg",false)" data-label="Branco R$3.700"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$3.700</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco R$3.700</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.700</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -423,16 +408,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-14-128-id" alt="iPhone 14" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-14-128-id">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 14</h3>
         <p class="product-storage">Lacrado · Indonésia PA/A</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("14-128-id","img/placeholder.jpg",false)" data-label="Azul R$3.950"><span class="c-dot" style="background:#2255cc;"></span>Azul R$3.950</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul R$3.950</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.950</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -449,16 +433,15 @@
   <div class="products-grid"><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u12-128" alt="iPhone 12" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u12-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 12</h3>
         <p class="product-storage">Spacenix Phones · 100% Bateria</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco</button><button class="chip" onclick="selectChip(this)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u12-128","img/placeholder.jpg",false)" data-label="Branco"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco</button><button class="chip" onclick="selectChip(this);trocarFoto("u12-128","img/placeholder.jpg",false)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button><button class="chip" onclick="selectChip(this);trocarFoto("u12-128","img/placeholder.jpg",false)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
         <p class="product-sub">🔋 100% Bat. · Garantia 6 meses</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.800</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -470,16 +453,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u13-128" alt="iPhone 13" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u13-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 13</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Rosa"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rosa</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u13-128","img/placeholder.jpg",false)" data-label="Rosa"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rosa</button></div>
         <p class="product-sub">Garantia 6 meses</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Rosa</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.200</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -491,16 +473,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u13-256" alt="iPhone 13" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u13-256">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 256GB</p>
         <h3 class="product-name">iPhone 13</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u13-256","img/placeholder.jpg",false)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
         <p class="product-sub">Garantia 6 meses</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.450</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -512,16 +493,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u14-128" alt="iPhone 14" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u14-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 14</h3>
         <p class="product-storage">Spacenix Phones · Garantia 6 meses</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto R$2.350"><span class="c-dot" style="background:#111111;"></span>Preto R$2.350</button><button class="chip" onclick="selectChip(this)" data-label="Azul R$2.350"><span class="c-dot" style="background:#2255cc;"></span>Azul R$2.350</button><button class="chip" onclick="selectChip(this)" data-label="Vermelho R$2.300"><span class="c-dot" style="background:#cc2222;"></span>Vermelho R$2.300</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u14-128","img/placeholder.jpg",false)" data-label="Preto R$2.350"><span class="c-dot" style="background:#111111;"></span>Preto R$2.350</button><button class="chip" onclick="selectChip(this);trocarFoto("u14-128","img/placeholder.jpg",false)" data-label="Azul R$2.350"><span class="c-dot" style="background:#2255cc;"></span>Azul R$2.350</button><button class="chip" onclick="selectChip(this);trocarFoto("u14-128","img/placeholder.jpg",false)" data-label="Vermelho R$2.300"><span class="c-dot" style="background:#cc2222;"></span>Vermelho R$2.300</button></div>
         <p class="product-sub">Preto/Azul R$2.350 · Vermelho R$2.300</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto R$2.350</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.300</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -533,16 +513,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-dmg">Sem Face ID</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u14-nofid" alt="iPhone 14" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u14-nofid">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 14</h3>
         <p class="product-storage">Spacenix Phones · SEM FACE ID</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u14-nofid","img/placeholder.jpg",false)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
         <p class="product-sub">⚠️ Sem Face ID</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.900</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -554,16 +533,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u14pro-256" alt="iPhone 14 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u14pro-256">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro · 256GB</p>
         <h3 class="product-name">iPhone 14 Pro</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Roxo"><span class="c-dot" style="background:#9b59b6;"></span>Roxo</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u14pro-256","img/placeholder.jpg",false)" data-label="Roxo"><span class="c-dot" style="background:#9b59b6;"></span>Roxo</button></div>
         <p class="product-sub">Garantia 6 meses</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Roxo</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.100</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -575,16 +553,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u14pm-128" alt="iPhone 14 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u14pm-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 128GB</p>
         <h3 class="product-name">iPhone 14 Pro Max</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u14pm-128","img/placeholder.jpg",false)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
         <p class="product-sub">Garantia 6 meses</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.450</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -596,16 +573,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u14pm-512" alt="iPhone 14 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u14pm-512">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 512GB</p>
         <h3 class="product-name">iPhone 14 Pro Max</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u14pm-512","img/placeholder.jpg",false)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
         <p class="product-sub">Garantia 6 meses</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.800</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -617,16 +593,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u15-128" alt="iPhone 15" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u15-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 15</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Rosa"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rosa</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u15-128","img/placeholder.jpg",false)" data-label="Rosa"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rosa</button></div>
         <p class="product-sub">Garantia 1 ano pela loja</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Rosa</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.000</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -638,16 +613,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u15-256" alt="iPhone 15" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u15-256">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 256GB</p>
         <h3 class="product-name">iPhone 15</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u15-256","img/placeholder.jpg",false)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
         <p class="product-sub">Garantia 1 ano pela loja</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.150</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -659,16 +633,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u15pm-256" alt="iPhone 15 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u15pm-256">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 256GB</p>
         <h3 class="product-name">iPhone 15 Pro Max</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u15pm-256","img/placeholder.jpg",false)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
         <p class="product-sub">Garantia 1 ano</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 4.300</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -680,16 +653,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u16-128" alt="iPhone 16" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u16-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone · 128GB</p>
         <h3 class="product-name">iPhone 16</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u16-128","img/placeholder.jpg",false)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
         <p class="product-sub">Garantia 1 ano</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.950</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -701,16 +673,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u16pro-128" alt="iPhone 16 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u16pro-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro · 128GB</p>
         <h3 class="product-name">iPhone 16 Pro</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Natural"><span class="c-dot" style="background:#c9a96e;"></span>Natural</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u16pro-128","img/placeholder.jpg",false)" data-label="Natural"><span class="c-dot" style="background:#c9a96e;"></span>Natural</button></div>
         <p class="product-sub">Garantia 1 ano</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Natural</div>
         <div class="product-footer">
           <span class="product-price">R$ 4.650</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -722,16 +693,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-used">Usado</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-u16pm-256" alt="iPhone 16 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-u16pm-256">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPhone Pro Max · 256GB</p>
         <h3 class="product-name">iPhone 16 Pro Max</h3>
         <p class="product-storage">Spacenix Phones</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button><button class="chip" onclick="selectChip(this)" data-label="Natural"><span class="c-dot" style="background:#c9a96e;"></span>Natural</button><button class="chip" onclick="selectChip(this)" data-label="Desert"><span class="c-dot" style="background:#d4a26a;"></span>Desert</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("u16pm-256","img/placeholder.jpg",false)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button><button class="chip" onclick="selectChip(this);trocarFoto("u16pm-256","img/placeholder.jpg",false)" data-label="Natural"><span class="c-dot" style="background:#c9a96e;"></span>Natural</button><button class="chip" onclick="selectChip(this);trocarFoto("u16pm-256","img/placeholder.jpg",false)" data-label="Desert"><span class="c-dot" style="background:#d4a26a;"></span>Desert</button></div>
         <p class="product-sub">Garantia 1 ano pela loja</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 5.450</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -750,16 +720,15 @@
   <div class="products-grid"><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ra5" alt="Redmi A5 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ra5">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi · 4/128GB</p>
         <h3 class="product-name">Redmi A5 4G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Gold/Preto"><span class="c-dot" style="background:#c9a96e;"></span>Gold/Preto</button><button class="chip" onclick="selectChip(this)" data-label="Aqua/Preto"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ra5","img/placeholder.jpg",false)" data-label="Gold/Preto"><span class="c-dot" style="background:#c9a96e;"></span>Gold/Preto</button><button class="chip" onclick="selectChip(this);trocarFoto("ra5","img/placeholder.jpg",false)" data-label="Aqua/Preto"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Preto</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Gold/Preto</div>
         <div class="product-footer">
           <span class="product-price">Consulte</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -771,16 +740,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ra7p" alt="Redmi A7 Pro 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ra7p">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi · 4/128GB</p>
         <h3 class="product-name">Redmi A7 Pro 4G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Prata/Preto"><span class="c-dot" style="background:#c0c0c0;"></span>Prata/Preto</button><button class="chip" onclick="selectChip(this)" data-label="Aqua/Azul"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ra7p","img/placeholder.jpg",false)" data-label="Prata/Preto"><span class="c-dot" style="background:#c0c0c0;"></span>Prata/Preto</button><button class="chip" onclick="selectChip(this);trocarFoto("ra7p","img/placeholder.jpg",false)" data-label="Aqua/Azul"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Azul</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Prata/Preto</div>
         <div class="product-footer">
           <span class="product-price">Consulte</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -792,16 +760,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-r15c-128" alt="Redmi 15C 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-r15c-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi · 4/128GB</p>
         <h3 class="product-name">Redmi 15C 4G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul/Preto R$1.310"><span class="c-dot" style="background:#2255cc;"></span>Azul/Preto R$1.310</button><button class="chip" onclick="selectChip(this)" data-label="Aqua/Preto R$1.310"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Preto R$1.310</button><button class="chip" onclick="selectChip(this)" data-label="Preto/Verde R$1.310"><span class="c-dot" style="background:#111111;"></span>Preto/Verde R$1.310</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("r15c-128","img/placeholder.jpg",false)" data-label="Azul/Preto R$1.310"><span class="c-dot" style="background:#2255cc;"></span>Azul/Preto R$1.310</button><button class="chip" onclick="selectChip(this);trocarFoto("r15c-128","img/placeholder.jpg",false)" data-label="Aqua/Preto R$1.310"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Preto R$1.310</button><button class="chip" onclick="selectChip(this);trocarFoto("r15c-128","img/placeholder.jpg",false)" data-label="Preto/Verde R$1.310"><span class="c-dot" style="background:#111111;"></span>Preto/Verde R$1.310</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul/Preto R$1.310</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.310</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -813,16 +780,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-r15c-256" alt="Redmi 15C 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-r15c-256">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi · 4/256GB</p>
         <h3 class="product-name">Redmi 15C 4G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Navy/Maple/Preto">Navy/Maple/Preto</button><button class="chip" onclick="selectChip(this)" data-label="Aqua/Preto"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("r15c-256","img/placeholder.jpg",false)" data-label="Navy/Maple/Preto">Navy/Maple/Preto</button><button class="chip" onclick="selectChip(this);trocarFoto("r15c-256","img/placeholder.jpg",false)" data-label="Aqua/Preto"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Preto</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Navy/Maple/Preto</div>
         <div class="product-footer">
           <span class="product-price">Consulte</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -834,16 +800,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-r15-128" alt="Redmi 15 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-r15-128">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi · 6/128GB</p>
         <h3 class="product-name">Redmi 15 4G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto/Cinza"><span class="c-dot" style="background:#111111;"></span>Preto/Cinza</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("r15-128","img/placeholder.jpg",false)" data-label="Preto/Cinza"><span class="c-dot" style="background:#111111;"></span>Preto/Cinza</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto/Cinza</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.430</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -855,16 +820,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rn13-aq" alt="Redmi Note 13 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rn13-aq">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi Note · 8/256GB</p>
         <h3 class="product-name">Redmi Note 13 4G</h3>
         <p class="product-storage">Aqua/Preto · Maple/Preto</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Aqua/Preto R$1.350"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Preto R$1.350</button><button class="chip" onclick="selectChip(this)" data-label="Maple/Preto R$1.350">Maple/Preto R$1.350</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rn13-aq","img/placeholder.jpg",false)" data-label="Aqua/Preto R$1.350"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua/Preto R$1.350</button><button class="chip" onclick="selectChip(this);trocarFoto("rn13-aq","img/placeholder.jpg",false)" data-label="Maple/Preto R$1.350">Maple/Preto R$1.350</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Aqua/Preto R$1.350</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.350</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -876,16 +840,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rn13-tr" alt="Redmi Note 13 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rn13-tr">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi Note · 8/256GB</p>
         <h3 class="product-name">Redmi Note 13 4G</h3>
         <p class="product-storage">Aqua · Maple/Transparente</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Aqua R$1.150"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua R$1.150</button><button class="chip" onclick="selectChip(this)" data-label="Maple/Transparente R$1.150">Maple/Transparente R$1.150</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rn13-tr","img/placeholder.jpg",false)" data-label="Aqua R$1.150"><span class="c-dot" style="background:#7ec8c8;"></span>Aqua R$1.150</button><button class="chip" onclick="selectChip(this);trocarFoto("rn13-tr","img/placeholder.jpg",false)" data-label="Maple/Transparente R$1.150">Maple/Transparente R$1.150</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Aqua R$1.150</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.150</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -897,16 +860,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rn14" alt="Redmi Note 14 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rn14">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi Note · 8/256GB</p>
         <h3 class="product-name">Redmi Note 14 4G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul/Preto/Verde"><span class="c-dot" style="background:#2255cc;"></span>Azul/Preto/Verde</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rn14","img/placeholder.jpg",false)" data-label="Azul/Preto/Verde"><span class="c-dot" style="background:#2255cc;"></span>Azul/Preto/Verde</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul/Preto/Verde</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.600</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -918,16 +880,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rn14p" alt="Redmi Note 14 Pro 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rn14p">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi Note Pro · 8/256GB</p>
         <h3 class="product-name">Redmi Note 14 Pro 4G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rn14p","img/placeholder.jpg",false)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.000</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -939,16 +900,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rn15p" alt="Redmi Note 15 Pro 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rn15p">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi Note Pro · 8/256GB</p>
         <h3 class="product-name">Redmi Note 15 Pro 4G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rn15p","img/placeholder.jpg",false)" data-label="Preto"><span class="c-dot" style="background:#111111;"></span>Preto</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.990</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -960,16 +920,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rn15p5g" alt="Redmi Note 15 Pro 5G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rn15p5g">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Redmi Note Pro 5G · 8/256GB</p>
         <h3 class="product-name">Redmi Note 15 Pro 5G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul/Preto/Cinza"><span class="c-dot" style="background:#2255cc;"></span>Azul/Preto/Cinza</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rn15p5g","img/placeholder.jpg",false)" data-label="Azul/Preto/Cinza"><span class="c-dot" style="background:#2255cc;"></span>Azul/Preto/Cinza</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul/Preto/Cinza</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.250</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -983,16 +942,15 @@
   <div class="products-grid"><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-pc85" alt="Poco C85" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-pc85">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Poco · 8/256GB</p>
         <h3 class="product-name">Poco C85</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Verde"><span class="c-dot" style="background:#4a7c4e;"></span>Verde</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("pc85","img/placeholder.jpg",false)" data-label="Verde"><span class="c-dot" style="background:#4a7c4e;"></span>Verde</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Verde</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.470</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1004,16 +962,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-pm8p" alt="Poco M8 Pro 5G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-pm8p">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Poco 5G · 8/256GB</p>
         <h3 class="product-name">Poco M8 Pro 5G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto/Verde"><span class="c-dot" style="background:#111111;"></span>Preto/Verde</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("pm8p","img/placeholder.jpg",false)" data-label="Preto/Verde"><span class="c-dot" style="background:#111111;"></span>Preto/Verde</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto/Verde</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.220</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1025,16 +982,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-px7p" alt="Poco X7 Pro 5G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-px7p">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Poco 5G · 12/512GB</p>
         <h3 class="product-name">Poco X7 Pro 5G</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Verde/Preto"><span class="c-dot" style="background:#4a7c4e;"></span>Verde/Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("px7p","img/placeholder.jpg",false)" data-label="Verde/Preto"><span class="c-dot" style="background:#4a7c4e;"></span>Verde/Preto</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Verde/Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.630</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1046,16 +1002,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-px8p" alt="Poco X8 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-px8p">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Poco · 12/512GB</p>
         <h3 class="product-name">Poco X8 Pro</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto/Branco"><span class="c-dot" style="background:#111111;"></span>Preto/Branco</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("px8p","img/placeholder.jpg",false)" data-label="Preto/Branco"><span class="c-dot" style="background:#111111;"></span>Preto/Branco</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto/Branco</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.970</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1067,16 +1022,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-px8pm" alt="Poco X8 Pro Max" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-px8pm">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Poco · 12/512GB</p>
         <h3 class="product-name">Poco X8 Pro Max</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco/Preto"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco/Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("px8pm","img/placeholder.jpg",false)" data-label="Branco/Preto"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco/Preto</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco/Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.650</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1088,8 +1042,7 @@
     </div><div class="product-card">
       <span class="product-badge badge-dmg">Cx. Amassada</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-px8p-cx1" alt="Poco X8 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-px8p-cx1">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">X8 Pro · 8/256GB</p>
@@ -1109,8 +1062,7 @@
     </div><div class="product-card">
       <span class="product-badge badge-dmg">Cx. Amassada</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-px8p-cx2" alt="Poco X8 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-px8p-cx2">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">X8 Pro · 8/512GB</p>
@@ -1135,16 +1087,15 @@
   <div class="products-grid"><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rn70" alt="Realme Note 70" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rn70">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Realme · 4/128GB</p>
         <h3 class="product-name">Realme Note 70</h3>
         <p class="product-storage">Lacrado · Garantia 1 ano</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Gold/Preto"><span class="c-dot" style="background:#c9a96e;"></span>Gold/Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rn70","img/placeholder.jpg",false)" data-label="Gold/Preto"><span class="c-dot" style="background:#c9a96e;"></span>Gold/Preto</button></div>
         <p class="product-sub">✅ Garantia 1 ano fabricante</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Gold/Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.370</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1156,16 +1107,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rc71" alt="Realme C71" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rc71">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Realme · 8/256GB</p>
         <h3 class="product-name">Realme C71</h3>
         <p class="product-storage">Lacrado · Garantia 1 ano</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Branco/Verde"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco/Verde</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rc71","img/placeholder.jpg",false)" data-label="Branco/Verde"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco/Verde</button></div>
         <p class="product-sub">✅ Garantia 1 ano fabricante</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Branco/Verde</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.580</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1177,16 +1127,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-rc85" alt="Realme C85 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-rc85">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Realme · 8/256GB</p>
         <h3 class="product-name">Realme C85 4G</h3>
         <p class="product-storage">Lacrado · Garantia 1 ano</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul/Preto"><span class="c-dot" style="background:#2255cc;"></span>Azul/Preto</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("rc85","img/placeholder.jpg",false)" data-label="Azul/Preto"><span class="c-dot" style="background:#2255cc;"></span>Azul/Preto</button></div>
         <p class="product-sub">✅ Garantia 1 ano fabricante</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul/Preto</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.940</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1198,16 +1147,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📱</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-is10" alt="Infinix Smart 10 4G" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-is10">📱</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Infinix · 4/128GB</p>
         <h3 class="product-name">Infinix Smart 10 4G</h3>
         <p class="product-storage">Lacrado · Garantia 1 ano</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto/Azul"><span class="c-dot" style="background:#111111;"></span>Preto/Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("is10","img/placeholder.jpg",false)" data-label="Preto/Azul"><span class="c-dot" style="background:#111111;"></span>Preto/Azul</button></div>
         <p class="product-sub">✅ Garantia 1 ano fabricante</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto/Azul</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.230</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1225,16 +1173,15 @@
   <div class="products-grid"><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📟</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ipadairm4-11-128" alt="iPad Air M4 11"" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ipadairm4-11-128">📟</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPad Air M4 · 11" · 128GB WiFi</p>
         <h3 class="product-name">iPad Air M4 11"</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Space Gray R$4.500">Space Gray R$4.500</button><button class="chip" onclick="selectChip(this)" data-label="Azul R$4.500"><span class="c-dot" style="background:#2255cc;"></span>Azul R$4.500</button><button class="chip" onclick="selectChip(this)" data-label="Starlight R$4.500"><span class="c-dot" style="background:#f5f0e8; border:1px solid #555;"></span>Starlight R$4.500</button><button class="chip" onclick="selectChip(this)" data-label="Roxo R$4.500"><span class="c-dot" style="background:#9b59b6;"></span>Roxo R$4.500</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ipadairm4-11-128","img/placeholder.jpg",false)" data-label="Space Gray R$4.500">Space Gray R$4.500</button><button class="chip" onclick="selectChip(this);trocarFoto("ipadairm4-11-128","img/placeholder.jpg",false)" data-label="Azul R$4.500"><span class="c-dot" style="background:#2255cc;"></span>Azul R$4.500</button><button class="chip" onclick="selectChip(this);trocarFoto("ipadairm4-11-128","img/placeholder.jpg",false)" data-label="Starlight R$4.500"><span class="c-dot" style="background:#f5f0e8; border:1px solid #555;"></span>Starlight R$4.500</button><button class="chip" onclick="selectChip(this);trocarFoto("ipadairm4-11-128","img/placeholder.jpg",false)" data-label="Roxo R$4.500"><span class="c-dot" style="background:#9b59b6;"></span>Roxo R$4.500</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Space Gray R$4.500</div>
         <div class="product-footer">
           <span class="product-price">R$ 4.500</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1246,16 +1193,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📟</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ipadairm4-11-256" alt="iPad Air M4 11"" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ipadairm4-11-256">📟</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPad Air M4 · 11" · 256GB WiFi</p>
         <h3 class="product-name">iPad Air M4 11"</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ipadairm4-11-256","img/placeholder.jpg",false)" data-label="Azul R$5.150"><span class="c-dot" style="background:#2255cc;"></span>Azul R$5.150</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul R$5.150</div>
         <div class="product-footer">
           <span class="product-price">R$ 5.150</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1267,16 +1213,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📟</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ipadairm4-13-128" alt="iPad Air M4 13"" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ipadairm4-13-128">📟</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPad Air M4 · 13" · 128GB WiFi</p>
         <h3 class="product-name">iPad Air M4 13"</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Space Gray R$5.850">Space Gray R$5.850</button><button class="chip" onclick="selectChip(this)" data-label="Azul R$5.850"><span class="c-dot" style="background:#2255cc;"></span>Azul R$5.850</button><button class="chip" onclick="selectChip(this)" data-label="Starlight R$5.850"><span class="c-dot" style="background:#f5f0e8; border:1px solid #555;"></span>Starlight R$5.850</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ipadairm4-13-128","img/placeholder.jpg",false)" data-label="Space Gray R$5.850">Space Gray R$5.850</button><button class="chip" onclick="selectChip(this);trocarFoto("ipadairm4-13-128","img/placeholder.jpg",false)" data-label="Azul R$5.850"><span class="c-dot" style="background:#2255cc;"></span>Azul R$5.850</button><button class="chip" onclick="selectChip(this);trocarFoto("ipadairm4-13-128","img/placeholder.jpg",false)" data-label="Starlight R$5.850"><span class="c-dot" style="background:#f5f0e8; border:1px solid #555;"></span>Starlight R$5.850</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Space Gray R$5.850</div>
         <div class="product-footer">
           <span class="product-price">R$ 5.850</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1288,16 +1233,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📟</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ipad11-128" alt="iPad 11" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ipad11-128">📟</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPad 11 · 128GB WiFi</p>
         <h3 class="product-name">iPad 11</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Rosa R$2.800"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rosa R$2.800</button><button class="chip" onclick="selectChip(this)" data-label="Azul R$2.800"><span class="c-dot" style="background:#2255cc;"></span>Azul R$2.800</button><button class="chip" onclick="selectChip(this)" data-label="Silver R$2.850"><span class="c-dot" style="background:#c0c0c0;"></span>Silver R$2.850</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ipad11-128","img/placeholder.jpg",false)" data-label="Rosa R$2.800"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rosa R$2.800</button><button class="chip" onclick="selectChip(this);trocarFoto("ipad11-128","img/placeholder.jpg",false)" data-label="Azul R$2.800"><span class="c-dot" style="background:#2255cc;"></span>Azul R$2.800</button><button class="chip" onclick="selectChip(this);trocarFoto("ipad11-128","img/placeholder.jpg",false)" data-label="Silver R$2.850"><span class="c-dot" style="background:#c0c0c0;"></span>Silver R$2.850</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Rosa R$2.800</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.800</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1309,16 +1253,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📟</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ipad11-256" alt="iPad 11" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ipad11-256">📟</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">iPad 11 · 256GB WiFi</p>
         <h3 class="product-name">iPad 11</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Azul"><span class="c-dot" style="background:#2255cc;"></span>Azul</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ipad11-256","img/placeholder.jpg",false)" data-label="Azul R$3.500"><span class="c-dot" style="background:#2255cc;"></span>Azul R$3.500</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Azul R$3.500</div>
         <div class="product-footer">
           <span class="product-price">R$ 3.500</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1332,16 +1275,15 @@
   <div class="products-grid-3"><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📟</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-pad2-128" alt="Tablet Pad 2" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-pad2-128">📟</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Xiaomi Pad 2 · 4/128GB</p>
         <h3 class="product-name">Tablet Pad 2</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Preto/Roxo/Verde"><span class="c-dot" style="background:#111111;"></span>Preto/Roxo/Verde</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("pad2-128","img/placeholder.jpg",false)" data-label="Preto/Roxo/Verde"><span class="c-dot" style="background:#111111;"></span>Preto/Roxo/Verde</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Preto/Roxo/Verde</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.580</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1353,16 +1295,15 @@
     </div><div class="product-card">
       
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">📟</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-pad2-256" alt="Tablet Pad 2" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-pad2-256">📟</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Xiaomi Pad 2 · 8/256GB</p>
         <h3 class="product-name">Tablet Pad 2</h3>
         <p class="product-storage">Global Lacrado</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Verde/Preto/Roxo"><span class="c-dot" style="background:#4a7c4e;"></span>Verde/Preto/Roxo</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("pad2-256","img/placeholder.jpg",false)" data-label="Verde/Preto/Roxo"><span class="c-dot" style="background:#4a7c4e;"></span>Verde/Preto/Roxo</button></div>
         <p class="product-sub">Global Lacrado</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Verde/Preto/Roxo</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.850</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1379,16 +1320,15 @@
   <div class="products-grid"><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">⌚</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-wse2-44" alt="Apple Watch SE 2ª Gen" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-wse2-44">⌚</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Watch SE · 44mm · GPS</p>
         <h3 class="product-name">Apple Watch SE 2ª Gen</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Midnight"><span class="c-dot" style="background:#111827;"></span>Midnight</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("wse2-44","img/placeholder.jpg",false)" data-label="Midnight R$2.050"><span class="c-dot" style="background:#111827;"></span>Midnight R$2.050</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Midnight R$2.050</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.050</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1400,16 +1340,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">Novo</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">⌚</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-wse3-40" alt="Apple Watch SE 3ª Gen" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-wse3-40">⌚</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Watch SE · 40mm · GPS</p>
         <h3 class="product-name">Apple Watch SE 3ª Gen</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Midnight"><span class="c-dot" style="background:#111827;"></span>Midnight</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("wse3-40","img/placeholder.jpg",false)" data-label="Midnight R$2.300"><span class="c-dot" style="background:#111827;"></span>Midnight R$2.300</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Midnight R$2.300</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.300</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1421,16 +1360,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">⌚</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ws9-41" alt="Apple Watch S9" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ws9-41">⌚</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Watch S9 · 41mm · GPS</p>
         <h3 class="product-name">Apple Watch S9</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Vermelho"><span class="c-dot" style="background:#cc2222;"></span>Vermelho</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ws9-41","img/placeholder.jpg",false)" data-label="Vermelho R$2.000"><span class="c-dot" style="background:#cc2222;"></span>Vermelho R$2.000</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Vermelho R$2.000</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.000</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1442,16 +1380,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">S11</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">⌚</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ws11-42" alt="Apple Watch S11" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ws11-42">⌚</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Watch S11 · 42mm · GPS</p>
         <h3 class="product-name">Apple Watch S11</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Jet Black R$2.850">Jet Black R$2.850</button><button class="chip" onclick="selectChip(this)" data-label="Rose Gold R$2.950"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rose Gold R$2.950</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ws11-42","img/placeholder.jpg",false)" data-label="Jet Black R$2.850">Jet Black R$2.850</button><button class="chip" onclick="selectChip(this);trocarFoto("ws11-42","img/placeholder.jpg",false)" data-label="Rose Gold R$2.950"><span class="c-dot" style="background:#f4a0b4; border:1px solid #555;"></span>Rose Gold R$2.950</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Jet Black R$2.850</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.850</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1463,16 +1400,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">S11</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">⌚</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-ws11-46" alt="Apple Watch S11" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-ws11-46">⌚</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Watch S11 · 46mm · GPS</p>
         <h3 class="product-name">Apple Watch S11</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Jet Black R$3.000">Jet Black R$3.000</button><button class="chip" onclick="selectChip(this)" data-label="Space Gray R$2.950">Space Gray R$2.950</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("ws11-46","img/placeholder.jpg",false)" data-label="Jet Black R$3.000">Jet Black R$3.000</button><button class="chip" onclick="selectChip(this);trocarFoto("ws11-46","img/placeholder.jpg",false)" data-label="Space Gray R$2.950">Space Gray R$2.950</button></div>
         <p class="product-sub">📦 Lacrado · Garantia Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Jet Black R$3.000</div>
         <div class="product-footer">
           <span class="product-price">R$ 2.950</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1484,16 +1420,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-hot">Ultra</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">⌚</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-wu2" alt="Apple Watch Ultra 2" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-wu2">⌚</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Watch Ultra 2 · 49mm · Caixa Natural 2023</p>
         <h3 class="product-name">Apple Watch Ultra 2</h3>
         <p class="product-storage">Lacrado · Garantia Apple</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Orange Beige">Orange Beige</button><button class="chip" onclick="selectChip(this)" data-label="Green/Gray TL ML">Green/Gray TL ML</button><button class="chip" onclick="selectChip(this)" data-label="Green/Gray TL SM">Green/Gray TL SM</button><button class="chip" onclick="selectChip(this)" data-label="Blue Black">Blue Black</button><button class="chip" onclick="selectChip(this)" data-label="Olive Alpine">Olive Alpine</button><button class="chip" onclick="selectChip(this)" data-label="Olive Indigo">Olive Indigo</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("wu2","img/placeholder.jpg",false)" data-label="Orange Beige">Orange Beige</button><button class="chip" onclick="selectChip(this);trocarFoto("wu2","img/placeholder.jpg",false)" data-label="Green/Gray TL ML">Green/Gray TL ML</button><button class="chip" onclick="selectChip(this);trocarFoto("wu2","img/placeholder.jpg",false)" data-label="Green/Gray TL SM">Green/Gray TL SM</button><button class="chip" onclick="selectChip(this);trocarFoto("wu2","img/placeholder.jpg",false)" data-label="Blue Black">Blue Black</button><button class="chip" onclick="selectChip(this);trocarFoto("wu2","img/placeholder.jpg",false)" data-label="Olive Alpine">Olive Alpine</button><button class="chip" onclick="selectChip(this);trocarFoto("wu2","img/placeholder.jpg",false)" data-label="Olive Indigo">Olive Indigo</button></div>
         <p class="product-sub">Todos R$ 4.700</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Orange Beige</div>
         <div class="product-footer">
           <span class="product-price">R$ 4.700</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1510,8 +1445,7 @@
   <div class="products-grid"><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">🏷️</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-atag1" alt="AirTag 1 Pack" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-atag1">🏷️</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">AirTag</p>
@@ -1531,8 +1465,7 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">🏷️</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-atag4" alt="AirTag 4 Pack" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-atag4">🏷️</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">AirTag</p>
@@ -1552,8 +1485,7 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">Novo</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">🎧</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-airpods3p" alt="AirPods 3 Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-airpods3p">🎧</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">AirPods</p>
@@ -1573,16 +1505,15 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">🖱️</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-mmouse" alt="Magic Mouse" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-mmouse">🖱️</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Magic Mouse · A3204 · 3ª Geração</p>
         <h3 class="product-name">Magic Mouse</h3>
         <p class="product-storage">Multi-Touch · USB-C · Bluetooth</p>
-        <div class="color-chips"><button class="chip" onclick="selectChip(this)" data-label="Black R$1.380"><span class="c-dot" style="background:#111111;"></span>Black R$1.380</button><button class="chip" onclick="selectChip(this)" data-label="Branco R$1.350"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$1.350</button></div>
+        <div class="color-chips"><button class="chip selected" onclick="selectChip(this);trocarFoto("mmouse","img/placeholder.jpg",false)" data-label="Black R$1.380"><span class="c-dot" style="background:#111111;"></span>Black R$1.380</button><button class="chip" onclick="selectChip(this);trocarFoto("mmouse","img/placeholder.jpg",false)" data-label="Branco R$1.350"><span class="c-dot" style="background:#f5f5f5; border:1px solid #555;"></span>Branco R$1.350</button></div>
         <p class="product-sub">📦 Original Apple</p>
-        <div class="selected-label"></div>
+        <div class="selected-label">Black R$1.380</div>
         <div class="product-footer">
           <span class="product-price">R$ 1.350</span>
           <button class="add-btn" onclick="buyOnWhatsApp(this)">
@@ -1594,8 +1525,7 @@
     </div><div class="product-card">
       <span class="product-badge badge-new">Novo</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">✏️</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-pencilpro" alt="Pencil Pro" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-pencilpro">✏️</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Pencil Pro · A2538</p>
@@ -1615,8 +1545,7 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">✏️</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-pencil1" alt="Pencil 1" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-pencil1">✏️</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Pencil · 1ª Geração</p>
@@ -1636,8 +1565,7 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">✏️</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-pencil2" alt="Pencil 2" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-pencil2">✏️</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Pencil · 2ª Geração · A2051 · 2020</p>
@@ -1657,8 +1585,7 @@
     </div><div class="product-card">
       <span class="product-badge badge-apple">🍎</span>
       <div class="product-img" onclick="openLightbox(this)" title="Ver imagem ampliada">
-        <span class="product-img-icon">✏️</span>
-        <span class="product-img-label">Ver foto</span>
+        <img src="img/placeholder.jpg" id="img-pencilusbc" alt="Pencil USB-C" style="width:100%;height:100%;object-fit:contain;display:none;"><span class="product-img-icon" id="ico-pencilusbc">✏️</span><span class="product-img-label">Ver foto</span>
       </div>
       <div class="product-info">
         <p class="product-cat">Apple Pencil USB-C</p>
@@ -1723,7 +1650,6 @@
   </div>
 </footer>
 
-<!-- LIGHTBOX -->
 <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
   <div class="lightbox-box">
     <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
@@ -1738,5 +1664,6 @@
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
